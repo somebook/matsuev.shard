@@ -1,0 +1,152 @@
+.about {
+  &.inner {
+    &.ru {
+      background: #000000 image-url("matsuev/about_bg-ru.jpg") top center no-repeat;
+    }
+    &.en {
+      background: #000000 image-url("matsuev/about_bg-en.jpg") top center no-repeat;
+    }
+    &.inner {
+      header {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: 0 0 30px 0;
+        nav {
+          ul {
+            &.menu {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .center-section {
+      margin: 0 0 60px -180px;
+      .margin {
+        float: left;
+        height: 200px;
+        width: 0;
+      }
+      .about-events {
+        clear: left;
+        float: left;
+        padding: 20px 30px 20px 0;
+        width: 130px;
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+        li {
+          list-style-type: none;
+          padding: 40px 0;
+          .desc {
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+          .year {
+            font-family: Georgia;
+            font-size: 12px;
+            font-style: italic;
+          }
+          .date {
+            color: #AAAAAA;
+            font-family: Georgia;
+            font-size: 12px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+    .chapter {
+      height: 44px;
+      &.ru {
+        background: image-url("matsuev/about-ru.png") no-repeat;
+      }
+      &.en {
+        background: image-url("matsuev/about-en.png") no-repeat;
+      }
+    }
+    .breadcrumbs {
+      margin: 0 0 30px 0;
+    }
+    .social {
+      margin: 220px -20px -64px 0;
+      text-align: right;
+      h4 {
+        display: none;
+      }
+      ul {
+      width: 500px;
+      }
+    }
+    .tag-section {
+      padding-top: 470px;
+      .posts-count {
+        clear: right;
+        float: right;
+        font-size: 14px;
+        margin-right: 15px;
+        margin-top: 30px;
+        text-align: right;
+        text-transform: uppercase;
+        i {
+          font-family: Georgia;
+          font-size: 12px;
+          text-transform: none;
+        }
+        a {
+          color: #FFCC00;
+          font-family: Georgia;
+          font-size: 72px;
+          font-style: italic;
+          text-decoration: none;
+          display:block;
+        }
+      }
+      .photos-count {
+        clear: right;
+        float: right;
+        font-size: 14px;
+        margin-right: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        a {
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+        .count {
+          font-family: Georgia;
+          font-size: 72px;
+          font-style: italic;
+          text-decoration: none;
+        }
+        .orange {
+          color: #FFCC00;
+          font-family: Georgia;
+          font-size: 12px;
+          font-style: italic;
+          text-decoration: none;
+          text-transform: none;
+        }
+      }
+      .link-to-main {
+        clear: right;
+        float: right;
+        margin-right: 15px;
+        margin-top: 50px;
+        text-align: right;
+        width: 110px;
+        i {
+          font-family: Georgia;
+          font-size: 12px;
+        }
+        a {
+          color: #FFCC00;
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

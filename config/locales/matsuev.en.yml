@@ -1,0 +1,84 @@
+en:
+  front:
+    matsuev:
+      denis_matsuev: Denis Matsuev
+      main: Main page
+      copy: all rights reserved.
+      bookmarks: to bookmarks
+      media:
+        media: Media
+        reviews: Reviews
+        press: Press
+        audio_alubums: Audio Albums
+        photogallery: Photogallery
+        videoarchive: Videoarchive
+        album:
+          albums: Albums
+          all_photos: All photos in gallery
+          photos: Photos
+        video:
+          videos: Videos
+        more:
+          review: More Reviews
+          press: More Press
+      blog:
+        blog: Blog
+        news: News
+        all_news: All News
+        archive: Press Archive
+        back: "&larr; Back to posts listing"
+        read_more: Read more
+        text: text
+        photos: photos
+        more: Show More
+        posts:
+          personal: Denis's posts in blog
+          official: Official news
+      event:
+        events: Concerts
+        next: Upcoming Event
+        tickets_buy: Buy Tickets
+        upcoming: Upcoming
+        cities: All Cities
+        calendar: Calendar
+        desc:
+          participate: The most important events in which I participate
+          city: You can choose your city
+      social:
+        title: "Denis in social networks:"
+      stream:
+        personal: Personal
+        official: Official
+      tag:
+        archive: Archive
+        video: Video
+        photo: Photo
+        text: Note
+        listing: Posts
+        tags: Tags
+      search:
+        prompt: Search
+        errors:
+          be_specific: "Please, be more specific (2+ chars)."
+          nothing_found: "Sorry, nothing was found."
+        results: Search results on
+        posts: Blog
+        events: Events
+        static: Info
+      about:
+        in_gallery: in gallery
+        posts: posts in blog
+        all: All
+        goto: Go to
+        personal_site: Denis's personal site
+        title:
+          nar: People's Artist of the Russian Federation
+          zas: Honored Artist of the Russian Federation
+      errors:
+        browser:
+          what_is: What is browser?
+          too_old: Your browser is too outdated for this site.
+          upgrade: Please, upgrade your browser.
+          video: Watch video
+        proxy_feed:
+          no_messages: There is no messages to confirm

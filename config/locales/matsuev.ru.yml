@@ -1,0 +1,85 @@
+ru:
+  front:
+    matsuev:
+      denis_matsuev: Денис Мацуев
+      main: Главная страница
+      copy: все права защищены.
+      bookmarks: в закладки
+      media:
+        media: Медиа
+        reviews: Рецензии
+        press: Пресса
+        audio_alubums: Аудио альбомы
+        photogallery: Фотогалерея
+        videoarchive: Видеоархив
+        album:
+          albums: Альбомы
+          all_photos: Все фото в галерее
+          photos: Фотографии
+        video:
+          videos: Видео
+        more:
+          review: Больше рецензий
+          press: Больше прессы
+      blog:
+        blog: Блог
+        news: Новости
+        all_news: Все новости
+        archive: Архив прессы
+        back: "&larr; Назад к списку записей"
+        read_more: Читать дальше
+        text: текст
+        photos: фото
+        more: Показать еще
+        posts:
+          personal: Сообщения Дениса в блоге
+          official: Официальные новости
+      event:
+        events: Концерты
+        next: Ближайшее событие
+        tickets_buy: Купить билеты
+        upcoming: Предстоящие
+        cities: Все города
+        calendar: Календарь
+        desc:
+          participate: Самые важные события, в которых я принимаю участие
+          city: Вы можете выбрать свой город
+      social:
+        title: "Денис в социальных сетях:"
+      stream:
+        personal: Личное
+        official: Публичное
+      tag:
+        archive: Архив
+        video: Видео
+        photo: Фото
+        text: Заметки
+        listing: Записи
+        tags: Метки
+      search:
+        prompt: Поиск
+        errors:
+          be_specific: "Уточните запрос (2+ символа)"
+          nothing_found: "Ничего не найдено"
+        results: Результаты поиска
+        posts: Блог
+        events: События
+        static: Инфо
+      about:
+        in_gallery: в галерее
+        posts: записей в блоге
+        all: Всего
+        goto: Перейти на
+        personal_site: Личный сайт Дениса
+        title:
+          nar: Народный артист Российской Федерации
+          zas: Заслуженный артист Российской Федерации
+      errors:
+        browser:
+          what_is: Что такое браузер?
+          too_old: Ваш браузер слишком стар для этого сайта.
+          upgrade: Мы рекомендуем вам установить новый браузер.
+          video: Посмотреть видео.
+        proxy_feed:
+          no_messages: Нет сообщений для подтверждения
+        

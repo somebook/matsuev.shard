@@ -1,0 +1,125 @@
+.tag-section {
+  float: left;
+  width: 200px;
+  margin-top: 100px;
+
+  .title {
+    float: left;
+    margin: 0 0 -20px 0;
+    width: 70px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    &.icns {
+      line-height: 30px;
+    }
+  }
+  .data {
+    padding: 0;
+    margin: 0 0 50px;
+  }
+
+  
+  .icons, .streams, .tags {
+    display: block;
+    margin: 0 0 0 70px;
+    padding: 0;
+    clear: both;
+    width: 100px;
+  }
+  .streams li, .tags li {
+    display: block;
+    clear: both;
+    width: 100px;
+  }
+  .icons {
+    padding-top: -10px !important;
+    
+    li {
+      display: block;
+      float: left;
+      width: 25px;
+      height: 25px;
+      margin: 0 8px 0 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      a {
+        display: block;
+        text-indent: -3000px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        &.video {
+          background-image: image-url("matsuev/video.png");
+          &.active {
+            background-image: image-url("matsuev/video_active.png");
+          }
+        }
+        &.photo {
+          background-image: image-url("matsuev/photo.png");
+          &.active {
+            background-image: image-url("matsuev/photo_active.png");
+          }
+        }
+        &.text {
+          background-image: image-url("matsuev/text.png");
+          &.active {
+            background-image: image-url("matsuev/text_active.png");
+          }
+        }
+      }
+    }
+  }
+
+  .streams {
+    margin: 0 0 15px 70px;
+    padding-bottom: 15px;
+    border-bottom: #777 1px solid;
+    border-top: #777 1px solid;
+    padding-top: 19px;
+    white-space: nowrap;
+    
+    li {
+      display: block;
+      margin: 0 0 6px 0;
+      
+      a {
+        padding: 3px;
+        color: #ffcc00;
+        font-size: 9px;
+        font-weight: bolder;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: #444;
+      }
+    }
+  }
+
+  .tags {
+    li {
+      display: block;
+      padding: 0 0 7px 0;
+      margin: 0 0 7px 0;
+      border-bottom: #777 1px solid;
+      font: 11px Georgia;
+      font-style: italic;
+      text-decoration: none;
+      color: #FC0;
+      
+      a {
+        font: 11px Georgia;
+        font-style: italic;
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+}

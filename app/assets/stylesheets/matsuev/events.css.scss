@@ -1,0 +1,416 @@
+.calendar {
+  div.active {
+    background: rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 0px rgba(0,0,0,.3) inset, 0 -1px 0px rgba(255,255,255,.1) inset;
+  }
+  &.widget {
+    height: auto;
+    margin-bottom:30px!important;
+    nav { 
+    display: none;
+    position: static;
+    margin: 40px 0 0;
+    & > div  {
+      padding: 3px 1px 0;
+      height: 120px;
+     }
+    }
+    .more-link {
+      display: none;
+    }
+    caption {
+      b {
+        display:inline;
+        color: #666;
+      }
+    }
+    td {
+      i {
+        font-size: 0;
+        height: 14px;
+        line-height: 14px;
+        width: 14px;
+      }
+    }
+    .arr {
+      &.prev {
+        top: 100px;
+        left:0;
+      }
+      &.next {
+        top: 100px;
+        right:0;
+      }
+    }
+    h3 {
+      display: none;
+    }
+  }
+}
+.calendar-toggle {
+  cursor: pointer;
+  float: left;
+  em {
+    border-bottom: dashed 1px;
+    font-style: normal;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+#calend {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    &.months {
+      & > li {
+        color: #FFFFFF;
+        margin: 0;
+        text-align: center;
+      }
+      li {
+        div {
+          &.month-year {
+            clear: both;
+            margin: 20px 0;
+            span {
+              &.month {
+                color: #FABC00;
+                font-family: Georgia;
+                font-size: 32px;
+                font-style: italic;
+              }
+              &.year {
+                color: #B2A7A7;
+                font-family: Georgia;
+                font-size: 14px;
+                font-style: italic;
+              }
+            }
+            div {
+              &.c {
+                float: left;
+                margin-top: -16px;
+                text-align: center;
+                width: 240px;
+              }
+            }
+          }
+          &.l_line {
+            border-bottom: 1px solid #FFFFFF;
+            float: left;
+            height: 1px;
+            width: 240px;
+          }
+          &.r_line {
+            border-bottom: 1px solid #FFFFFF;
+            float: left;
+            height: 1px;
+            width: 240px;
+          }
+        }
+        &.desc {
+          font-family: Georgia;
+          font-size: 16px;
+          font-style: italic;
+          margin: 0 5px 0 -46px;
+          text-align: left;
+          width: 160px;
+          .cities {
+            border-bottom: 1px solid #5E5D65;
+            border-top: 1px solid #5E5D65;
+            color: #90888B;
+            font-size: 12px;
+            margin-top: 10px;
+            padding: 6px 0;
+          }
+        }
+      }
+    }
+    &.days {
+      & > li {
+        min-height: 250px;
+        margin: 0 10px;
+        width: 110px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+      li {
+        div {
+          line-height: 1.2em;
+          &.month {
+            font-size: 12px;
+            font-style: normal;
+            text-transform: uppercase;
+          }
+          &.day {
+            color: #68686F;
+            font-family: Georgia;
+            font-size: 90px;
+            font-style: italic;
+            margin-top: -15px;
+          }
+          &.city {
+            text-transform: uppercase;
+          }
+          &.time {
+            color: #646165;
+            font-family: Georgia;
+            font-style: italic;
+          }
+        }
+      }
+    }
+    &.thumbs {
+      .info {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset;
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1)inset;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1)inset;
+        background: rgba(0,0,0,0.05);
+        padding: 10px;
+        text-align: left;
+        border-radius: 0 0 3px 3px;
+        display: none;
+      }
+      .hide {
+          padding:10px;
+        &:hover {
+          width: 200px;
+          right: auto;
+          left: -10px;
+          bottom: auto;
+          .info {
+            display: block;
+            margin: 5px -10px -10px -10px;
+            position: relative;
+            top: 5px;
+          }
+          & > a {
+            width: 110px;
+            margin-top: 15px;
+            div.city {
+              margin:5px 10px!important;
+            }
+            div.place {
+              margin:5px 10px!important;
+            }
+            div.time { 
+              margin:5px 10px!important;
+            }
+          }
+        }
+      }
+      a {
+        &:hover {
+          .icon24 {
+            &.i-photo {
+              background-position: 0 -48px;
+            }
+            &.i-text {
+              background-position: -24px -48px;
+            }
+            &.i-video {
+              background-position: -48px -48px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .filter {
+    float: left;
+    position: relative;
+    color: #000000;
+    margin: 0;
+    &.city {
+      float: right;
+      margin-right: 40px;
+    }
+    .chzn-search {
+      display: none;
+    }
+    .chzn-container-single {
+      .chzn-single {
+        height: 23px;
+        line-height: 21px;
+        border: 0 none;
+        background-color: #36363D;
+        background-image: none;
+        box-shadow: none;
+        div {
+          background: none repeat scroll 0 0 transparent;
+          border: 0 none;
+          b {
+            background: image-url("matsuev/select-arrow.png") no-repeat scroll 4px 9px transparent;
+          }
+        }
+        span {
+          color: #DDDDDD;
+          font-family: "Helvetica Neue",Helvetica,Arial;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    ul {
+      display: inline;
+      float: none;
+      margin: 0 4px 4px 0;
+      padding: 0 0 0 4px;
+      width: auto;
+    }
+    li {
+      float: none;
+      margin: 0;
+      padding: 7px 7px 8px;
+    }
+    a {
+      float: none;
+    }
+    select {
+      width: 180px;
+    }
+    .chzn-container {
+      .chzn-results {
+        .active-result {
+          color: #DDDDDD;
+          height: auto;
+          margin: 0;
+          padding: 7px 7px 8px;
+          text-align: left;
+          width: auto;
+        }
+      }
+      .chzn-drop {
+        border-color: #36363D;
+        color: #DDDDDD;
+        font-family: "Helvetica Neue",Helvetica,Arial;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #36363D;
+      }
+    }
+  }
+}
+#calend li, #calend ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#calend ul.days li div.city, #calend ul.days li div.place, #calend ul.days li div.time {
+  line-height: 18px;
+  margin: 5px 0;
+  text-align: left;
+}
+ul {
+  &.relevant {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        b {
+          margin: 0 0 0 27px;
+          padding: 3px 0 0 0;
+          line-height: 1.15em;
+          font-size: 0.94em;
+          display: block;
+        }
+      }
+    }
+  }
+}
+#event {
+  .date {
+    float: left;
+    text-align: center;
+    width: 100px;
+    .day {
+      font-family: Georgia;
+      font-size: 90px;
+      font-style: italic;
+      margin-top: -16px;
+    }
+    .time {
+      color: #646165;
+      font-family: Georgia;
+      font-style: italic;
+    }
+  }
+  .title_place {
+    float: left;
+    margin-left: -100px;
+    padding-left: 110px;
+    width: 530px;
+    .title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    .place {
+      background-image: image-url("matsuev/place_marker.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+      clear: right;
+      float: right;
+      font-size: 16px;
+      padding-left: 20px;
+    }
+    .city {
+      clear: right;
+      color: #646165;
+      float: right;
+      font-family: Georgia;
+      font-style: italic;
+    }
+  }
+  .desc {
+    clear: both;
+    color: #CCCCCC;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+  a {
+    color: #FFCC00;
+  }
+  .tickets_url {
+    clear: right;
+    float: right;
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    width: 100px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .tickets_price {
+    clear: right;
+    float: right;
+    font-family: Georgia;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    width: 100px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .google_calendar {
+    clear: both;
+    margin-top: 5px;
+  }
+}

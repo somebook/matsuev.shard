@@ -1,0 +1,42 @@
+.pagination
+{ 
+  display: inline-block;
+  float: right;
+  height: 42px;
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-image: image-url("matsuev/pager_bg.png");
+  font: 11px "Helvetica Neue", Helvetica, Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+  & > *
+  {
+    display: inline-block;
+    height: 42px;
+    letter-spacing: 9px;
+    padding-top: 14px;
+  }
+  a {
+    color: #FC0;
+    text-decoration: none;
+  }
+  em.current {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: -5px 0px;
+    background-origin: padding-box;
+    background-image: image-url("matsuev/pager_bg_active.png");
+  }
+  .next_page
+  {
+    letter-spacing: 1px;
+    padding-left: 15px;
+  }
+  .previous_page
+  {
+    padding-right: 20px;
+    letter-spacing: 1px;
+  }
+}
+
