@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
   s.summary     = "Somebook Matsuev shard"
   s.description = "Rails mountable engine that provides embedded shard functionality"
 
-  s.files = Dir["{app,config,lib}/**/*"] + ["README.rdoc"]
+  s.files = Dir["{app,config,lib}/**/*"] + ["README.md"]
 end
