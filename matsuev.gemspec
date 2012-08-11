@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Matsuev::VERSION
   s.authors     = ["Gregory Eremin"]
   s.email       = ["magnolia_fan@me.com"]
-  s.homepage    = "https://github.com/itfog/matsuev.somebook"
+  s.homepage    = "https://github.com/somebook/matsuev.shard"
   s.summary     = "Somebook Matsuev shard"
   s.description = "Rails mountable engine that provides embedded shard functionality"
 
