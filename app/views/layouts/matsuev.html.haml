@@ -47,7 +47,7 @@
     -# - if index_page?
     -#   %section.player#intro
     -#     - if @current_shard_language
-    -#       = render 'front/matsuev/shared/videos_on_index'
+    -#       = render 'matsuev/shared/videos_on_index'
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
@@ -55,19 +55,19 @@
           = render "matsuev/shared/social_accounts"
     - if index_page?
       %section.photo
-        = # render "front/matsuev/shared/photos_widget"
+        = render "matsuev/shared/photos_widget"
     %section{ class: @unsticked ? "center-section unsticked" : "center-section"}
       %ul.breadcrumbs
         = render_breadcrumbs separator: "&nbsp;/&nbsp;", tag: "li"
       = yield
     %aside
       - unless index_page? || @current_shard_language.nil?
-        = # render "front/matsuev/shared/left_nav"
+        = render "matsuev/shared/left_nav"
       %section.next-event
-        = # render "front/matsuev/shared/event_widget"
+        = render "matsuev/shared/event_widget"
       - unless events_page?
         %section.calendar
-          = # render "front/matsuev/shared/calend_widget", count: 4
+          = render "matsuev/shared/calend_widget", count: 4
     %footer
       .copy
         .title

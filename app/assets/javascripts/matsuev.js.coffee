@@ -45,6 +45,6 @@ jQuery ->
   $("section.photo div.photo").jCarouselLite({
     btnNext: "section.photo .arr.next"
     btnPrev: "section.photo .arr.prev"
-    visible: 9
+    visible: 8
     scroll: 3
   })
