@@ -18,5 +18,5 @@
         .tickets_price=@info.tickets_price
 
     = raw @info.desc
-    .google_calendar= render "shared/google_button", event: @event, info: @info
+    .google_calendar= render "matsuev/events/google_button", event: @event, info: @info
 = render "shared/share_buttons"
