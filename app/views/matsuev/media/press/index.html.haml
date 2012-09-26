@@ -29,5 +29,5 @@
       = link_to t("front.matsuev.blog.read_more") + " (" + t("front.matsuev.blog.text") + " + #{content.photos.count} " + t("front.matsuev.blog.photos") + ")...", blog_path(post), class: "post-more-link"
     = render partial: "matsuev/shared/tag_cloud", locals: { tags: content.tags.misc }
 .ajax-pagination
-  = image_tag "denis/ajax-loader.gif", class: "loader"
+  = image_tag "matsuev/ajax-loader.gif", class: "loader"
   = will_paginate(@posts, page_links: false, container: false, previous_label: "", next_label: t('front.matsuev.blog.more'), :renderer => WillPaginate::ActionView::LinkRenderer) unless @posts.empty?

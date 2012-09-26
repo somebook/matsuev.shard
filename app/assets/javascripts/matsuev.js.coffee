@@ -20,7 +20,7 @@ jQuery ->
   $(".next_page").live 'click', (e) ->
     $(this).parent().addClass("loading")
     el = $(this)
-    if $(this).attr("href").search("/blog/more") == 0
+    if $(this).attr("href").search("/blog/more") == 0 || $(this).attr("href").search("/media/press") == 0
       url = $(this).attr("href")
     else
       url = "/blog/more" + $(this).attr("href")
