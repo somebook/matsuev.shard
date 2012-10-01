@@ -24,6 +24,7 @@ jQuery ->
       url = $(this).attr("href")
     else if $(this).attr("href").search("/media/press") == 0 or $(this).attr("href").search("/media/press/more") == 0
       url = $(this).attr("href").replace("/media/press?", "/media/press/more?")
+      console.log(url)
     else
       url = "/blog/more" + $(this).attr("href")
     $.ajax({
