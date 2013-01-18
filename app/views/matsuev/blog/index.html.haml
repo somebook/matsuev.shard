@@ -5,4 +5,5 @@
     %span.ribbon
     = render "matsuev/blog/posts", posts: @official_posts, stream: :official
   .block.personal
+    .afisha{ class: lang_code }
     = render "matsuev/blog/posts", posts: @personal_posts, stream: :personal
