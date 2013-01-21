@@ -57,17 +57,18 @@
       %section.photo
         = render "matsuev/shared/photos_widget"
     %section{ class: @unsticked ? "center-section unsticked" : "center-section"}
-      %ul.breadcrumbs
-        = render_breadcrumbs separator: "&nbsp;/&nbsp;", tag: "li"
-      = yield
-    %aside
-      - unless index_page? || @current_shard_language.nil?
-        = render "matsuev/shared/left_nav"
-      %section.next-event
-        = render "matsuev/shared/event_widget"
-      - unless events_page?
-        %section.calendar
-          = render "matsuev/shared/calend_widget", count: 4
+      .clearfix
+        %ul.breadcrumbs
+          = render_breadcrumbs separator: "&nbsp;/&nbsp;", tag: "li"
+        = yield
+      %aside
+        - unless index_page? || @current_shard_language.nil?
+          = render "matsuev/shared/left_nav"
+        %section.next-event
+          = render "matsuev/shared/event_widget"
+        - unless events_page?
+          %section.calendar
+            = render "matsuev/shared/calend_widget", count: 4
     %footer
       .copy
         .title
