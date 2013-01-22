@@ -1,5 +1,5 @@
 jQuery ->
-  $(".filter.date select").live 'change', (e) ->
+  $(".filter.date select").on 'change', (e) ->
     if $(this).val() == "" && $(".filter.city select").val() == ""
       window.location.href = window.location.pathname
     else if $(this).val() == ""
@@ -9,7 +9,7 @@ jQuery ->
     else
       window.location.href = "?city=" + $(".filter.city select").val() + "&date=" + $(this).val()
 
-  $(".filter.city select").live 'change', (e) ->
+  $(".filter.city select").on 'change', (e) ->
     if $(this).val() == "" && $(".filter.date select").val() == ""
       window.location.href = window.location.pathname
     else if $(this).val() == ""
@@ -22,7 +22,7 @@ jQuery ->
   $(".filter.date select").chosen()
   $(".filter.city select").chosen()
 
-  $(".calendar span.arr.prev").live 'click', (e) ->
+  $(".calendar span.arr.prev").on 'click', (e) ->
     $.ajax({
       url: "/concerts/load/prev?month=" + $(this).next().data("month"),
       success: (data) ->
@@ -34,7 +34,7 @@ jQuery ->
     })
     false
 
-  $(".calendar span.arr.next").live 'click', (e) ->
+  $(".calendar span.arr.next").on 'click', (e) ->
     $.ajax({
       url: "/concerts/load/next?month=" + $(this).prev().data("month"),
       success: (data) ->
@@ -46,7 +46,7 @@ jQuery ->
     })
     false
 
-  $(".calendar-toggle").live 'click', (e) ->
+  $(".calendar-toggle").on 'click', (e) ->
     if $(this).next().css("display") == "none"
       $.cookie("calendar", "on")
     else

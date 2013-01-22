@@ -17,7 +17,7 @@ jQuery ->
       played = true
     jsPlayer.addEvent("play", countPlaying)
 
-  $(".next_page").live 'click', (e) ->
+  $(".next_page").on 'click', (e) ->
     $(this).parent().addClass("loading")
     el = $(this)
     if $(this).attr("href").search("/blog/more") == 0

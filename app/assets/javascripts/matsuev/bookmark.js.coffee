@@ -1,5 +1,5 @@
 jQuery ->
-  $(".add_to_bookmarks").live 'click', (a) ->
+  $(".add_to_bookmarks").on 'click', (a) ->
     title = document.title 
     url = document.location
     try 
