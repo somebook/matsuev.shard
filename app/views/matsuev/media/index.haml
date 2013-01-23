@@ -14,7 +14,8 @@
               = image_tag(album.photos.first.link('160c'))
               .info
                 %span= album.title
-
+  %p.more-link
+    = link_to t('front.matsuev.media.photogallery'), :media_albums
   - unless @posts.empty?
     .clearfix.announce
       %h3= t('front.matsuev.media.press')
@@ -28,8 +29,9 @@
               = link_to post.content(@current_shard_language).title, blog_path(post)
               - if post.content(@current_shard_language).tags.include? @review_tag
                 %span.label-review= @review_tag.name
-      %p.more-link
-        =link_to t('front.matsuev.media.more.press'), :media_press
+    %p.more-link
+      /=link_to t('front.matsuev.media.more.press'), :media_press
+      = link_to t('front.matsuev.media.press'), :media_press
   - unless @videos.empty?
     .clearfix
       %h3= t('front.matsuev.media.video.videos')
@@ -47,6 +49,8 @@
                 %video{ id: "video_#{video.id}", class: "video-js vjs-default-skin", controls: true, preload: "auto", width: "230", height: "150", :"data-setup" => '{}' }
                   %source{ src: video.url(false, "mp4"), type: 'video/mp4' }
                   %source{ src: video.url(false, "webm"), type: 'video/webm' }
+    %p.more-link
+      = link_to t('front.matsuev.media.videoarchive'), :media_videos
 - unless @audio_albums.empty?
   .clearfix
 
