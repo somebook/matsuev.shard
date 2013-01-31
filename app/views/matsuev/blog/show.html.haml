@@ -23,5 +23,5 @@
   %p= raw content.uncut
   = render partial: "matsuev/shared/tag_cloud", locals: { tags: content.tags.misc }
   = render partial: "shared/share_buttons"
-  = render partial: "shared/commentatr_comments", locals: { entry_id: content.commentatr_hash, lang: @current_shard_language.language.code }
-  = stylesheet_link_tag "matsuev/comments"
+  -# = render partial: "shared/commentatr_comments", locals: { entry_id: content.commentatr_hash, lang: @current_shard_language.language.code }
+  -# = stylesheet_link_tag "matsuev/comments"
