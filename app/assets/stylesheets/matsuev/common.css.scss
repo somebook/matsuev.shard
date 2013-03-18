@@ -1007,7 +1007,7 @@ section.photo ul, section.photo li {
 .social {
     height: 60px;
     &>div{
-      padding: 0 0 0 30px;
+      padding: 30px 0 0 30px;
     }
   h4 {
     display: none;
@@ -1892,7 +1892,9 @@ position: relative;
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-
+.broadcasting { position: absolute; top:60px; left:360px; z-index: 99}
+.broadcasting iframe { border:none;}
+.f { background: image-url("matsuev/f.png"); position: absolute; left: 960px; top:70px; z-index: 100; width: 46px; height: 53px}
 
 @media (max-width: 767px) {
 

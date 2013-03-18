@@ -22,12 +22,22 @@
   = yield :head
 %body
   = render "matsuev/shared/outdated_browser_body"
+  
   .bigimg
     .rel
       = image_tag "matsuev/bg#{rand(4).succ}.jpg"
       .cover
   .watermark{ class: lang_code }
   %div{ role: "main", class: index_page? ? "page index" : "page inner #{@static_page_class}" }
+    .broadcasting
+      %script{ type: "text/javascript", src: "http://philharmonic.onlinetv.ru/js/onlineTvPlayer.js" }
+      :javascript
+         onlineTvPlayer.palyerId = 'c84b7f6e7a'
+         onlineTvPlayer.streamId = '8c0b599ab7'
+         onlineTvPlayer.iframeSize = {width:"660", height:"426"}
+         onlineTvPlayer.playerSize = {width:"660", height:"426"}
+         onlineTvPlayer.loadPlayer()
+    .f
     %header
       %nav
         %ul.menu
@@ -49,14 +59,6 @@
     -#     - if @current_shard_language
     -#       = render 'matsuev/shared/videos_on_index'
     %section.social
-      .broadcasting
-        %script{ type: "text/javascript", src: "http://philharmonic.onlinetv.ru/js/onlineTvPlayer.js" }
-        :javascript
-           onlineTvPlayer.palyerId = 'c84b7f6e7a'
-           onlineTvPlayer.streamId = '8c0b599ab7'
-           onlineTvPlayer.iframeSize = {width:"660", height:"426"}
-           onlineTvPlayer.playerSize = {width:"660", height:"426"}
-           onlineTvPlayer.loadPlayer()
       %div
         %h4= t('front.matsuev.social.title')
         %ul
