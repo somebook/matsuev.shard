@@ -1022,7 +1022,7 @@ section.photo ul, section.photo li {
     li {
       list-style: none;
       margin: 0;
-      padding: 0 5px 0;
+      padding: 0;
       display: inline-block;
       vertical-align: top;
     }
@@ -1033,7 +1033,7 @@ section.photo ul, section.photo li {
     height: 20px;
     margin: 0 5px -4px 0;
     display: inline-block;
-    min-width: 90px;
+    min-width:75px;
     &.vkontakte {
       background-image: image-url("matsuev/social_vkontakte.png");
       width: 70px;
