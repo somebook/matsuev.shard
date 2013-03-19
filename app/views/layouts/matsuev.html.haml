@@ -29,15 +29,16 @@
       .cover
   .watermark{ class: lang_code }
   %div{ role: "main", class: index_page? ? "page index" : "page inner #{@static_page_class}" }
-    .broadcasting
-      %script{ type: "text/javascript", src: "http://philharmonic.onlinetv.ru/js/onlineTvPlayer.js" }
-      :javascript
-         onlineTvPlayer.palyerId = 'c84b7f6e7a'
-         onlineTvPlayer.streamId = '8c0b599ab7'
-         onlineTvPlayer.iframeSize = {width:"660", height:"426"}
-         onlineTvPlayer.playerSize = {width:"660", height:"426"}
-         onlineTvPlayer.loadPlayer()
-    .f
+    - if ENV["BROADCAST"] == "yes" || !Rails.env.production?
+      .broadcasting
+        %script{ type: "text/javascript", src: "http://philharmonic.onlinetv.ru/js/onlineTvPlayer.js" }
+        :javascript
+           onlineTvPlayer.palyerId = 'c84b7f6e7a'
+           onlineTvPlayer.streamId = '8c0b599ab7'
+           onlineTvPlayer.iframeSize = {width:"660", height:"426"}
+           onlineTvPlayer.playerSize = {width:"660", height:"426"}
+           onlineTvPlayer.loadPlayer()
+      .f
     %header
       %nav
         %ul.menu
