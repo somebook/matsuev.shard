@@ -29,7 +29,7 @@
       .cover
   .watermark{ class: lang_code }
   %div{ role: "main", class: index_page? ? "page index" : "page inner #{@static_page_class}" }
-    - if ENV["BROADCAST"] == "yes" || !Rails.env.production?
+    - if (ENV["BROADCAST"] == "yes" || !Rails.env.production?) && index_page?
       .broadcasting
         %script{ type: "text/javascript", src: "http://philharmonic.onlinetv.ru/js/onlineTvPlayer.js" }
         :javascript
