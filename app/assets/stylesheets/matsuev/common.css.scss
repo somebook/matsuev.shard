@@ -1301,7 +1301,7 @@ input {
   .center-section {
     margin: 0 0 80px;
   }
-  .breadcrumbs {
+  .breadcrumbsmbs {
     margin-left: -80px;
   }
   header {
@@ -1321,6 +1321,7 @@ input {
           background: image-url("matsuev/logo-ru.png") no-repeat scroll center center;
           height: 160px;
           padding: 40px 0;
+          margin-left: -21px;
         }
       }
       &.en {
