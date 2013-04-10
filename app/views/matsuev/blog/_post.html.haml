@@ -17,7 +17,7 @@
     = link_to t("front.matsuev.blog.read_more") + "...", blog_path(post) if content.has_cut?
   - elsif content.photos.empty?
     - if content.videos.first.youtube?
-      %iframe.video{ src: "http://www.youtube.com/embed/#{content.videos.first.youtube_id}", frameborder: "0", allowfullscreen: true }
+      %iframe.video{ src: "http://www.youtube.com/embed/#{content.videos.first.youtube_id}?autoplay=1", frameborder: "0", allowfullscreen: true }
     - else
       %video{ id: "video_#{content.videos.first.id}", class: "video-js vjs-default-skin", controls: true, preload: "auto", :"data-setup" => '{}' }
         %source{ src: content.videos.first.url(false, "mp4"), type: 'video/mp4' }
