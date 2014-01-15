@@ -3,6 +3,7 @@
 //= require_tree ./matsuev
 //= require chosen-jquery
 //= require jquery.lightbox-0.5
+//= require fancybox
 //= require jquery_cookie
 //= require fotorama
 //= require audiojs/audio.min
@@ -17,16 +18,18 @@ jQuery ->
       played = true
     jsPlayer.addEvent("play", countPlaying)
 
-  $(".next_page").on 'click', (e) ->
+  $("body").on 'click', 'a.next_page', (e) ->
     $(this).parent().addClass("loading")
     el = $(this)
     if $(this).attr("href").search("/blog/more") == 0
       url = $(this).attr("href")
+      console.log url
     else if $(this).attr("href").search("/media/press") == 0 or $(this).attr("href").search("/media/press/more") == 0
       url = $(this).attr("href").replace("/media/press?", "/media/press/more?")
       console.log(url)
     else
       url = "/blog/more" + $(this).attr("href")
+      console.log url
     $.ajax({
       url: url,
       success: (data) ->
@@ -37,7 +40,7 @@ jQuery ->
             if $(this).hasClass("disabled") then $(this).parent().hide()
         )
     })
-    false
+    e.preventDefault()
 
   $(".ajax-pagination").each(
     ->
