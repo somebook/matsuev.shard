@@ -9,6 +9,9 @@ jQuery ->
       if $(this.element).data("author")
         this.title += "Автор: "
         this.title += $(this.element).data("author")
+        this.title += "<br>"
+      if $(this.element).data("original")
+        this.title += "<a style='float:right; color: #333' target='_blank' href='" + $(this.element).data("original") + "'>версия для печати</a><br>"
     helpers:
       title:
         type: "inside"
