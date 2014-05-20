@@ -10,14 +10,6 @@
 //= require jcarousellite_1.0.1.min
 
 jQuery ->
-  $(".video-js").each (video) ->
-    jsPlayer = _V_(this.id)
-    played = false
-    countPlaying = ->
-      _gaq.push(['_trackEvent', 'Videos', 'Play']) unless played
-      played = true
-    jsPlayer.addEvent("play", countPlaying)
-
   $("body").on 'click', 'a.next_page', (e) ->
     $(this).parent().addClass("loading")
     el = $(this)
