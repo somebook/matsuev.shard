@@ -59,6 +59,9 @@
     -#   %section.player#intro
     -#     - if @current_shard_language
     -#       = render 'matsuev/shared/videos_on_index'
+    - if index_page?
+      %section.banner
+        = image_tag 'matsuev/banner.jpg' 
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
