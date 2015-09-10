@@ -46,3 +46,17 @@ jQuery ->
     visible: 8
     scroll: 3
   })
+
+  b1 = $('.banner1')
+  b2 = $('.banner2')
+
+  setInterval (->
+    b1.fadeToggle(500, 'swing', ->
+      b2.fadeToggle(500)
+      tmp = b1
+      b1 = b2
+      b2 = tmp
+      return
+    )    
+    return
+  ), 10000

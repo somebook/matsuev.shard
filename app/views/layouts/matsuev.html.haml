@@ -60,8 +60,10 @@
     -#     - if @current_shard_language
     -#       = render 'matsuev/shared/videos_on_index'
     - if index_page?
-      %section.banner
-        = image_tag 'matsuev/banner.jpg' 
+      %section.banner.banner1
+        = image_tag 'matsuev/banner-gazprom.jpg' 
+      %section.banner.banner2{ style: 'display: none;'}
+        = image_tag 'matsuev/banner-rostech.jpg'
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
