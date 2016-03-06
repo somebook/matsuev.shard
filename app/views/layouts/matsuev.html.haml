@@ -55,15 +55,15 @@
       %h1{ class: lang_code }
         = link_to t('front.matsuev.denis_matsuev'), root_path
         .light
-    -# - if index_page?
-    -#   %section.player#intro
-    -#     - if @current_shard_language
-    -#       = render 'matsuev/shared/videos_on_index'
     - if index_page?
-      %section.banner.banner1
-        = image_tag 'matsuev/banner-gazprom.jpg' 
-      %section.banner.banner2{ style: 'display: none;'}
-        = image_tag 'matsuev/banner-rostech.jpg'
+      %section.player#intro
+        - if @current_shard_language
+          = render 'matsuev/shared/videos_on_index'
+    / - if index_page?
+    /   %section.banner.banner1
+    /     = image_tag 'matsuev/banner-gazprom.jpg' 
+    /   %section.banner.banner2{ style: 'display: none;'}
+    /     = image_tag 'matsuev/banner-rostech.jpg'
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
