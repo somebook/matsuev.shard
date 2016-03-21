@@ -65,7 +65,9 @@
     /   %section.banner.banner2{ style: 'display: none;'}
     /     = image_tag 'matsuev/banner-rostech.jpg'
     - if index_page?
-      %section.empty_block{ style: 'height: 395px' }
+      %section.banner
+        %a{ href: "http://grandpianocompetition.com/#{lang_code}/", target: '_blank' }
+          = image_tag 'matsuev/banners/grand-piano.jpg'
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
