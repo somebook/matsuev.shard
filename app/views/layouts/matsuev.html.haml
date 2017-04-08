@@ -64,8 +64,8 @@
     /     = image_tag 'matsuev/banner-gazprom.jpg' 
     /   %section.banner.banner2{ style: 'display: none;'}
     /     = image_tag 'matsuev/banner-rostech.jpg'
-    / - if index_page?
-    /   %section.banner
+    - if index_page?
+      %section.banner
     /     = image_tag "matsuev/banners/gazprom-#{lang_code}.jpg"
     %section.social
       %div
