@@ -66,8 +66,8 @@
     /     = image_tag 'matsuev/banner-rostech.jpg'
     - if index_page?
       %section.banner
-        %a.lightbox{ href: '' }
-          = image_tag "matsuev/banners/crescendo.png"
+        %a.lightbox{ href: image_url('matsuev/banners/crescendo.png') }
+          = image_tag 'matsuev/banners/crescendo.png'
     %section.social
       %div
         %h4= t('front.matsuev.social.title')
